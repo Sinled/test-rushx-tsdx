@@ -1,0 +1,78 @@
+// DO NOT ADD COMMENTS IN THIS FILE.  They will be lost when the Rush tool resaves it.
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
+  "packages": [
+    {
+      "name": "@babel/core",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "@size-limit/preset-small-lib",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "@storybook/addon-essentials",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "@storybook/addon-info",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "@storybook/addon-links",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "@storybook/addons",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "@storybook/react",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "@types/react",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "@types/react-dom",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "babel-loader",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "husky",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "react",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "react-dom",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "react-is",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "size-limit",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "tsdx",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "tslib",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "typescript",
+      "allowedCategories": [ "libraries" ]
+    }
+  ]
+}
