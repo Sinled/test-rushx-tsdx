@@ -1,15 +1,40 @@
-import React, { FC, HTMLAttributes, ReactChild } from 'react';
+import React from 'react';
+import { IColumn, SelectionMode } from 'office-ui-fabric-react/lib/DetailsList';
+import { ShimmeredDetailsList, IShimmeredDetailsListProps } from 'office-ui-fabric-react/lib/ShimmeredDetailsList';
 
-export interface Props extends HTMLAttributes<HTMLDivElement> {
-  /** custom content, defaults to 'the snozzberries taste like snozzberries' */
-  children?: ReactChild;
-}
+const shimmeredDetailsListProps: IShimmeredDetailsListProps['listProps'] = {
+	renderedWindowsAhead: 0,
+	renderedWindowsBehind: 0,
+};
 
-// Please do not use types off of a default export module or else Storybook Docs will suffer.
-// see: https://github.com/storybookjs/storybook/issues/9556
-/**
- * A custom Thing component. Neat!
- */
-export const Thing: FC<Props> = ({ children }) => {
-  return <div>{children || `the snozzberries taste like snozzberries`}</div>;
+export const ShimmerApplicationExample: React.FunctionComponent = () => {
+	const columns: Array<IColumn> = [
+		{
+			key: 'name',
+			name: 'Name',
+			minWidth: 0,
+		},
+		{
+			key: 'description',
+			name: 'Description',
+			minWidth: 0,
+		},
+	];
+
+	return (
+		<>
+			<div>
+				<ShimmeredDetailsList
+					setKey="items"
+					items={[]}
+					columns={columns}
+					selectionMode={SelectionMode.none}
+					enableShimmer={true}
+					ariaLabelForShimmer="Content is being fetched"
+					ariaLabelForGrid="Item details"
+					listProps={shimmeredDetailsListProps}
+				/>
+			</div>
+		</>
+	);
 };
