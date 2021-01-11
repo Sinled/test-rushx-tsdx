@@ -1,25 +1,25 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Thing, Props } from '../src';
+import { ShimmerApplicationExample } from '../src';
 
 const meta: Meta = {
-  title: 'Welcome',
-  component: Thing,
-  argTypes: {
-    children: {
-      control: {
-        type: 'text',
-      },
-    },
-  },
-  parameters: {
-    controls: { expanded: true },
-  },
+	title: 'Welcome',
+	component: ShimmerApplicationExample,
+	argTypes: {
+		children: {
+			control: {
+				type: 'text',
+			},
+		},
+	},
+	parameters: {
+		controls: { expanded: true },
+	},
 };
 
 export default meta;
 
-const Template: Story<Props> = args => <Thing {...args} />;
+const Template: Story = args => <ShimmerApplicationExample />;
 
 // By passing using the Args format for exported stories, you can control the props for a component for reuse in a test
 // https://storybook.js.org/docs/react/workflows/unit-testing
